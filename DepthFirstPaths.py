@@ -17,6 +17,21 @@ class DepthFirstPaths():
                 self.dfs(G,w)
                 self.edgeTo[w] = s
 
+    def hasPathTo(self,v):
+        return self.marked[v]
+
+    def pathTo(self,v):
+        if (not self.hasPathTo(v)):
+            return None
+        else:
+            path = [v]
+            x = v
+            while not (x == self.s):
+                path.append(self.edgeTo[x])
+                x = self.edgeTo[x]
+            # path.append(v)
+            return list(reversed(path))
+
 if __name__ == '__main__':
     from Graph import Graph
     from In import In
@@ -27,3 +42,4 @@ if __name__ == '__main__':
     dfp = DepthFirstPaths(G,0)
     print(dfp.edgeTo)
     print(dfp.marked)
+    print(dfp.pathTo(3))
