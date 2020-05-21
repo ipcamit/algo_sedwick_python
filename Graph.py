@@ -13,7 +13,7 @@ class Graph():
             self.E = self.filobject.readInt()
             self.adj = [[] for _ in range(self.V)]
             # instead of bags or linked lists or sets, adj is simple list of lists
-            for _ in range(self.V):
+            for _ in range(self.E):
                 v= self.filobject.readInt()
                 w= self.filobject.readInt()
                 self.addEdge(v,w)

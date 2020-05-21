@@ -13,4 +13,5 @@
 3. Depth First search: DepthFirstPaths implements simple depth first search as shown  in lecture
    
    - python3 DepthFirstPaths.py tinyG.txt
-   - 
+4- Breadth First search: implemented distanceto too
+   - python3 BreadthFirstPaths.py tinCG.py
