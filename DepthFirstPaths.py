@@ -33,12 +33,12 @@ class DepthFirstPaths():
             return list(reversed(path))
 
 if __name__ == '__main__':
-    from Graph import Graph
+    from Digraph import Digraph
     from In import In
     import sys
 
     in_ = In(sys.argv[1])
-    G = Graph(filobject=in_)
+    G = Digraph(fileobject=in_)
     dfp = DepthFirstPaths(G,0)
     print(dfp.edgeTo)
     print(dfp.marked)

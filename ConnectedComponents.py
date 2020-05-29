@@ -33,7 +33,7 @@ if __name__ == '__main__':
     import sys
 
     in_ = In(sys.argv[1])
-    G = Graph(filobject=in_)
+    G = Graph(fileobject=in_)
     cc = CC(G)
     print(cc.id_)
     print(cc.marked)

@@ -3,19 +3,19 @@ class Graph():
     V = 0
     E = 0
     adj = None
-    filobject = None
-    def __init__(self,V=0,filobject = None):
+    fileobject = None
+    def __init__(self,V=0,fileobject = None):
         if V!=0 :
             pass
-        elif(isinstance(filobject,In)):
-            self.filobject = filobject
-            self.V = self.filobject.readInt()
-            self.E = self.filobject.readInt()
+        elif(isinstance(fileobject,In)):
+            self.fileobject = fileobject
+            self.V = self.fileobject.readInt()
+            self.E = self.fileobject.readInt()
             self.adj = [[] for _ in range(self.V)]
             # instead of bags or linked lists or sets, adj is simple list of lists
             for _ in range(self.E):
-                v= self.filobject.readInt()
-                w= self.filobject.readInt()
+                v= self.fileobject.readInt()
+                w= self.fileobject.readInt()
                 self.addEdge(v,w)
         else:
             raise Exception("Improper Graph Init")

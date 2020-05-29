@@ -40,12 +40,12 @@ class BreadthFirstPaths():
             return list(reversed(path))
 
 if __name__ == '__main__':
-    from Graph import Graph
+    from Digraph import Digraph
     from In import In
     import sys
 
     in_ = In(sys.argv[1])
-    G = Graph(filobject=in_)
+    G = Digraph(fileobject=in_)
     bfp = BreadthFirstPaths(G,0)
     print(bfp.edgeTo)
     print(bfp.marked)
