@@ -27,6 +27,9 @@ class CC():
             if not self.marked[w]:
                 self.dfs(G,w)
 
+    def connected(self,v,w):
+        return self.id_[v]==sel.id_[w]
+
 if __name__ == '__main__':
     from Graph import Graph
     from In import In

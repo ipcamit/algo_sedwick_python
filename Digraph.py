@@ -35,6 +35,11 @@ class Digraph():
     def toString(self):
         pass
 
+    def reverse(self):
+        temp_adj = [[] for _ in range(self.V)]
+        for w in range(G.getV()):
+            if 
+
 if __name__ == '__main__':
     from In import In
     import sys
