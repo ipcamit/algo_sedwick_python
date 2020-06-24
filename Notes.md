@@ -1,6 +1,6 @@
 ### Notes on how to run and other stuff
 
-#### Undirected graphs
+#### Undirected Graphs
 
 1. Introduction:
    
@@ -13,9 +13,14 @@
 3. Depth First search: DepthFirstPaths implements simple depth first search as shown  in lecture
    
    - python3 DepthFirstPaths.py tinyG.txt
-4- Breadth First search: implemented distanceto too
-   - python3 BreadthFirstPaths.py tinCG.py
 
-5- Connected components: python3 ConnectedComponents.py tinyG.txt
+4. Breadth First search: implemented distanceto too
 
-6- 
+  - python3 BreadthFirstPaths.py tinCG.py
+
+5. Connected components: python3 ConnectedComponents.py tinyG.txt
+
+#### Directed Graphs
+
+All the files can be run similarly as above, contains 3 DG, tinyDG, tinDG2, tinDG3. Which ones needed for the job, needed to be checked manually. BarebonesWebCrawler was simple implementation of Breadth first web crawler, it works but barely! 
+

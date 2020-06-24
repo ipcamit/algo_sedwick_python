@@ -35,6 +35,15 @@ class Digraph():
     def toString(self):
         pass
 
+    def revert(self):
+        adj_rev = [[] for _ in range(self.V)]
+        for node in range(self.V):
+            for v in self.adj[node]:
+                adj_rev[v].append(node)
+        self.adj = adj_rev
+
+
+
 if __name__ == '__main__':
     from In import In
     import sys
@@ -42,6 +51,11 @@ if __name__ == '__main__':
     file = sys.argv[1]
     in_ = In(file)
     D = Digraph(fileobject=in_)
+    for v in range(D.getV()):
+        for w in D.adj[v]:
+            print("{}->{}".format(v,w))
+
+    D.revert()
     for v in range(D.getV()):
         for w in D.adj[v]:
             print("{}->{}".format(v,w))
